@@ -10,6 +10,8 @@ Link to Website !
 
 Welcome!
 
+![](Images/416-Hub-Main-Page.png)
+
 Personal Food Review Website that I developed. I give my personal opinions on my favoruite spots within Toronto (mainly North york) including my favouriote restaurants, bars, activites, parks, etc. 
 
 New Features!
