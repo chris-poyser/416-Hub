@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../CSS_Files/mainpage.css">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <script src="https://kit.fontawesome.com/afdf969ec9.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("user_PBhYAZEJAfkiKh3rYnHxj");
+  })();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="../Javascript_Files/jquery_form_validation.js"></script>
+  <script src="../Javascript_Files/collapsiblemenu.js"></script>
+  <script src="../Javascript_Files/weather.js"></script>
+  <script src="../Javascript_Files/quote.js"></script>
+  <title>Main Page</title>
+</head>
+<body>
+    <div id="navigation_bar" class="navbar">
+      <a href="MainPage.html">
+      <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616264846/COMP_266/416_hub_logo_nzhr5i.png" alt="416 Hub Logo">
+      </a>
+      <a id ="icon1" class="collapse" href="javascript:void(0);" onclick="collapseMenu()">
+        <i class="fas fa-plus-square fa-3x"></i>
+      <span></span></a>
+      <a id ="icon2" class="collapse hidden" href="javascript:void(0);" onclick="collapseMenu()">
+        <i class="fas fa-minus-square fa-3x"></i>
+      <span></span></a>
+      <div class="nav_bar_center">
+        <button name = "eats_button" class="button" type="button" onclick=location.href='EatsPage.html'><span>EATS</span></button>
+        <button name = "parks_trails_button" class="button" type="button" onclick=location.href='ParksTrails.html'><span>PARKS/TRAILS</span></button>
+        <button name = "activities_button" class ="button activities" type="button" onclick=location.href='Activities.html'><span>ACTIVITIES</span></button>
+      </div>
+      <button name = "about" class="button right" type="button" onclick="document.getElementById('contact').scrollIntoView();"><span>Contact</span></button>
+    </div>
+
+    <div class="row entry">
+      <div class="main">
+        <h1>416 Hub</h1>
+        <h2>Best North York Spots</h2>
+        <p>Showcasing some of Uptown Toronto's most amazing and wonderful</p>
+
+        <ul>
+          <li>Food</li>
+          <li>Drinks</li>
+          <li>Desserts</li>
+          <li>Parks</li>
+          <li>Trails</li>
+          <li>Activities</li>
+        </ul>
+
+        <button name = "weekly_highlights_button" class="button" type="button" onclick=location.href='WeeklyHighlights.html'><span>Weekly Highlights</span></button>
+        <button name = "facebook_page_button" class ="button" type="button" onclick="window.open('https://www.facebook.com/416-Hub-110437154438255')"><span>Facebook Page</span></button>
+        <div id="spotify">
+          <a onclick="document.getElementById('playlist').scrollIntoView();">
+            <br>
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1620082512/COMP_266/Spotify_Logo_RGB_Green_bmfhaf.png" alt="Spotify Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="side">
+        <img class="fade slides" src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616272218/COMP_266/north_york_2_sjoiao.jpg" alt="North York View" >
+        <img class="fade slides" src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616264849/COMP_266/north_york_yduhch.jpg" alt="North York View" >
+        <img class="fade slides" src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616286048/COMP_266/north_york_3_nz3cci.jpg" alt="North York View" >
+
+        <div style="text-align:center">
+          <span class="square"></span>
+          <span class="square"></span>
+          <span class="square"></span>
+        </div>
+      </div>
+
+  </div>
+
+  <div id="tip_bar">
+    <h2>Weather in the GTA</h2>
+    <div class="dropdown">
+      <button class="drop_menu button">Choose City</button>
+      <div class="dropdown_buttons">
+        <a value="markham" onclick="getWeather('markham')">Markham</a>
+        <a value="mississauga" onclick="getWeather('mississauga')">Mississauga</a>
+        <a value="north york" onclick="getWeather('north york')">North York</a>
+        <a value="toronto" onclick="getWeather('toronto')">Toronto</a>
+      </div>
+    </div>
+    <a id="weather">
+      <i class="temp fas fa-temperature-high fa-3x"></i>
+    <span></span></a>
+    <div class="additional"></div>
+    <div class="quote"></div>
+  </div>
+
+  <div class="entry about">
+    <h2>About</h2>
+    <h3>Christopher Poyser</h3>
+    <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616265318/COMP_266/rsz_photo_of_me_brn1i8.jpg" width="300" height="200" alt="Chris">
+    <p>I have lived in North York all my life and I have enjoyed a vast amount of experiences through the region.
+       However, not a lot of other websites display good recommendations for Food, Parks and Activities like Indoor Soccer within North york and a majority of them show recommendations for spots in Downtown Toronto. Thus, I decided to give my personal recommendations from places I have visited and share them for everyone else to experience. There may be some spots I haven't recommended and that is because I just haven't experienced them yet!!! If any of you have any recommendations for me to experience and potentially post it on my site please feel free to contact me. I hope you enjoy!!<br><br>
+
+       Thanks,<br><br>
+
+       Chris
+     </p>
+  </div>
+  <div id="playlist" class="entry playlist">
+    <h2>Spotify Playlists and Podcasts</h2>
+    <p>While you’re on your way to visit some of my recommended spots or just enjoying your day-to-day life, I thought could share some of my favourite playlists and podcasts that I love to listen to on the go. Follow my profile below while you're at it!</p><br>
+    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:ca.poyser&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+    <div id="music">
+      <h3>Music Playlists</h3>
+      <iframe src="https://open.spotify.com/embed/playlist/17dNSmRvQDBpITEpVOiOt7" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/6qG24vjyiKxiKXkgGEhcNu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7gIoKXt0gmx" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/0ZKt7y2Rd1zmq2J7JbJ7dR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div id="podcast">
+      <h3>Podcasts</h3>
+      <iframe src="https://open.spotify.com/embed-podcast/show/4xWe8gRBm21Z76FAx38GVT" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div>
+
+  <div id="contact" class="entry contact">
+    <h2>Contact</h2>
+    <form name="form">
+      <div id="contact_name" class="textbox">
+        <label for="name">Your Name:</label><br>
+        <br><input type="text" id="name" name="name"><i class="fas fa-times"></i><br>
+      </div>
+      <div id="contact_email" class="textbox">
+        <br><label for="email">Your Email:</label><br>
+        <br><input type="text" id="email" name="email"><i class="fas fa-times"></i></br>
+      </div>
+      <div id="contact_location" class="textbox">
+        <p>Location of Place:</p>
+        <br><input type="text" id="location" name="location"><i class="fas fa-times"></i></br>
+      </div>
+      <div id="contact_recommendation" class="recommendation">
+        <p>Type of Recommendation</p>
+        <input type="radio" id="Eats" name="recommendation" value="Food">
+        <label for="Eats">Food</label><br>
+        <input type="radio" id="parktrails" name="recommendation" value="Park or Trail">
+        <label for="parktrails">Park or Trail</label><br>
+        <input type="radio" id="activities" name="recommendation" value="Activity">
+        <label for="activities">Activity</label><br>
+      </div>
+      <div id="contact_message" class="textbox">
+        <br><label for="Message">Message:</label><br>
+        <br><textarea id="message" name="Message" rows="15" cols="100"></textarea><i class="fas fa-times"></i></br>
+      </div>
+      <button name = "submit_button" class="button" type="submit" ><span>Submit</span></button>
+    </form>
+  </div>
+
+</div>
+
+<script src="../Javascript_Files/autoslides.js"></script>
+</body>
+</html>
