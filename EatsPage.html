@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../CSS_Files/mainpage.css">
+<head>
+  <script src="https://kit.fontawesome.com/afdf969ec9.js" crossorigin="anonymous"></script>
+  <script src="../Javascript_Files/collapsiblemenu.js"></script>
+  <script src="../Javascript_Files/contentfilter.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../Javascript_Files/jquery_search_bar.js"></script>
+  <title>Eats Page</title>
+</head>
+
+<body onload="filteredItems('all')">
+  <div id="navigation_bar" class="navbar">
+    <a href="MainPage.html">
+      <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616264846/COMP_266/416_hub_logo_nzhr5i.png" alt="416 Hub Logo">
+    </a>
+    <a id ="icon1" class="collapse" href="javascript:void(0);" onclick="collapseMenu()">
+      <i class="fas fa-plus-square fa-3x"></i>
+    <span></span></a>
+    <a id ="icon2" class="collapse hidden" href="javascript:void(0);" onclick="collapseMenu()">
+      <i class="fas fa-minus-square fa-3x"></i>
+    <span></span></a>
+    <div class="nav_bar_center">
+      <button name = "eats_button" class="button" type="button" onclick=location.href='EatsPage.html'><span>EATS</span></button>
+      <button name = "parks_trails_button" class="button" type="button" onclick=location.href='ParksTrails.html'><span>PARKS/TRAILS</span></button>
+      <button name = "activities_button" class ="button activities" type="button" onclick=location.href='Activities.html'><span>ACTIVITIES</span></button>
+      <button name = "weekly_highlights_button" class="button weekly" type="button" onclick=location.href='WeeklyHighlights.html'><span>WEEKLY HIGLIGHTS</span></button>
+    </div>
+
+  </div>
+
+  <div class="header">
+    <h1>Eats</h1>
+    <p>Craving? Choose from some of the best options of food carts to dine in places</p>
+
+    <div class="selections">
+      <button id="filter1" class="filter button" type="button" onclick="filteredItems('food')">
+        Food
+      </button>
+      <button id="filter2" class="filter button" type="button" onclick="filteredItems('drinks')">
+        Drinks
+      </button>
+      <button id="filter3" class="filter button" type="button" onclick="filteredItems('desserts')">
+        Desserts
+      </button>
+      <button id="filter4" class="filter button all" type="button" onclick="filteredItems('all')">
+        Display all
+      </button>
+      <div id="search_bar">
+        <br><input type="text" id="search_box" name="search_box">
+          <a id ="search" href="javascript:void(0);">
+            <i class="fas fa-search fa-2x"></i>
+          <span></span></a>
+        </br>
+    </div>
+    </div>
+
+  </div>
+
+    <div class="scroll-content">
+      <div class="entry all select drinks">
+        <h2>Han Ba Tang</h2>
+        <h5>Last Updated: May 4, 2021</h5>
+        <h4 onclick=location.href='https://goo.gl/maps/wNmuCahix8nK21HG9'><i class="fas fa-thumbtack"></i> Location: 4862 Yonge St, North York, ON M2N 5N2</h4>
+        <div class="slideshow">
+          <div class="fade slide1">
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616264847/COMP_266/han_ba_tang_kbpys6.webp" alt="Han Ba Tang">
+            <div class="numbertext">1 / 2</div>
+          </div>
+          <div class="fade slide1">
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616297855/COMP_266/han_ba_tang_2_vc94pl.jpg" alt="Han Ba Tang">
+            <div class="numbertext">2 / 2</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+        </div>
+        <h3>Type: Drinks</h3>
+        <br><table>
+          <tr><td>Day<td>Hours of Operation</tr>
+            <tr><td>Wed-Sun <td>2 PM - 8 PM</tr>
+            <tr><td>Mon-Tues <td>Closed</td>
+          </tr>
+        </table>
+        <br><p>
+          Han Ba Tang is a Korean bar that is one of my favourite weekend late-night go-to’s for drinks with friends. That staff is very friendly and young, they always have a
+          nice music playlist playing in the background with some sports games playing on TV and most importantly they have outstanding drinks.
+        </p>
+        <p>
+          They have a wide variety of Soju with my personal favourites being the peach and yogurt flavours and depending on the day they have drink specials from $3 shots
+          to whole bottles of liquor being available under $50. If Soju isn’t your thing, the next best thing I recommend is the sangria which is really nice and sweet, or you
+          can go for an in-house-made cocktail with my personal favourite being the sona colada.
+        </p>
+      </div>
+      <div class="entry select all food drinks">
+        <h2>Chicken in the Kitchen</h2>
+        <h5>Last Updated: May 4, 2021</h5>
+        <h4 onclick=location.href='https://goo.gl/maps/qrCkEHRNbSP89w6K7'><i class="fas fa-thumbtack"></i>Location: 5600 Yonge St, North York, ON M2N 5S2</h4>
+        <div class="slideshow">
+          <div class="fade slide2">
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616264846/COMP_266/chicken_in_the_kitchen_mlz1wh.jpg" alt="Chicken in the Kitchen">
+            <div class="numbertext">1 / 2</div>
+          </div>
+          <div class="fade slide2">
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616353163/COMP_266/chicken_in_the_kitchen_2_of9n44.jpg" alt="Chicken in the Kitchen">
+            <div class="numbertext">2 / 2</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <h3>Type: Food and Drinks</h3>
+        <br><table>
+          <tr><td>Day<td>Hours of Operation</tr>
+            <tr><td>Mon-Sun <td>12 PM - 9 PM</tr>
+          </tr>
+        </table>
+        <br><p>
+          This place is fried chicken galore with some of the best Korean fried chicken I have ever had. This is the go-to spot when you are your friends are looking for some
+          food after work or late at night, but you want some nice cheap drinks to go along with it. My personal favourites are the red-hot chilli peppers fried chicken which is
+          served with rice cakes and the gold fried chicken which is served with potato wedges. All Korean fried chicken dishes are also served with a side of pickled radish.
+        </p>
+        <p>
+          For drinks here, you can find the common beers on draft and in bottles. But what makes this place special is there $3 shots every Friday and Saturday for vodka,
+          tequila and jack daniels. If you want to be more different you can go for their special in-house shooters and cocktails or if rice wine is more of your thing, they have
+          a nice variety of soju.
+        </p>
+      </div>
+      <div class="entry select all desserts">
+        <h2>Dairy Queen</h2>
+        <h5>Last Updated: May 4, 2021</h5>
+        <h4 onclick=location.href='https://goo.gl/maps/Z57BCbYzcgPtbYDz9'><i class="fas fa-thumbtack"></i>Location: 5051-5061 Yonge Street Unit A01003a, North York, ON M2N 5P2</h4>
+        <div class="slideshow">
+          <div class="fade slide3">
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616264847/COMP_266/dairy_queen_new_urnztd.jpg" alt="Dairy Queen">
+            <div class="numbertext">1 / 2</div>
+          </div>
+          <div class="fade slide3">
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616353703/COMP_266/dairy_queen_2_m0cp0v.jpg" alt="Dairy Queen">
+            <div class="numbertext">2 / 2</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        <h3>Type: Desserts</h3>
+        <br><table>
+          <tr><td>Day<td>Hours of Operation</tr>
+            <tr><td>Mon-Sun <td>12 PM - 9 PM</tr>
+          </tr>
+        </table>
+        <br><p>
+          Whether it’s a nice warm sunny day or you’re just in for your late-night cravings, you can never go wrong with some ice cream from Dairy Queen. The obvious choice for everyone
+          when think of Dairy Queen is the delicious blizzards they have. My personal favourite from this spot is the chocolate chip cookie dough blizzard with the cookie dough chunks.
+          Another one that you definitely can’t go wrong with is the royal new york cheesecake blizzard with the stuffed fruit middle.
+        </p>
+        <p>
+          If blizzards aren’t your thing, you can always go for the classic soft server ice cream or if you’re more of a drink person they have smoothies and icy cold beverages like
+          lemonade as well. If you need some nice ice cream cake, Dairy Queen makes some of the best of the best and you can’t go wrong with their oreo blizzard cake. Just make sure
+          you contact them beforehand to check if they have it made.
+        </p>
+      </div>
+      <div class="entry select all food drinks">
+        <h2>Union Social Eatery</h2>
+        <h5>Last Updated: May 4, 2021</h5>
+        <h4 onclick=location.href='https://g.page/Union-Social-Yonge-Sheppard?share'><i class="fas fa-thumbtack"></i>Location: 4899 Yonge St, Toronto, ON M2N 5N4</h4>
+        <div class="slideshow">
+          <div class="fade slide4">
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616264848/COMP_266/union_social_eatery_w1po4h.jpg" alt="Union Social Eatery">
+            <div class="numbertext">1 / 2</div>
+          </div>
+          <div class="fade slide4">
+            <img src="https://res.cloudinary.com/dyffgebxb/image/upload/v1616354627/COMP_266/union_social_eatery_2_gb4sgg.jpg" alt="Union Social Eatery">
+            <div class="numbertext">2 / 2</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+        </div>
+        <h3>Type: Food and Drinks</h3>
+        <br><table>
+          <tr><td>Day<td>Hours of Operation</tr>
+            <tr><td>Wed-Sun <td>4:30 PM - 9:30 PM</tr>
+            <tr><td>Mon-Tues <td>Closed</td>
+          </tr>
+        </table>
+        <br><p>
+          Union social eatery is one of my favourite spots for mid-day gatherings with friends or late evening drinks with co-workers. They have fantastic food, and you can’t go wrong
+          with some of their alcoholic beverages. The vibe is very laid back and chill with a nice patio on the second floor that overlooks Yonge St. or if you prefer a cozier vibe,
+          they have indoor dining as well.
+        </p>
+        <p>
+          Personally, I would start off with the main shareable which is their delicious nachos big enough for a group of four and you can add on chicken or braised brisket if you like.
+          The main course you have to try is the killer chicken sandwich which has a nice spicy kick to it. If you’re not that big of a sandwich person then their bigeye ahi tuna bowl is
+          the second most popular choice served with some nice rice, veggies and tuna.
+        </p>
+        <p>
+          As for drinks to go with your meal, you can’t go wrong with a nice draft beer or if you want something more special try their sweet and nice cocktails that they make.
+        </p>
+      </div>
+    </div>
+
+<script src="../Javascript_Files/manualslides.js"></script>
+</body>
+</html>
