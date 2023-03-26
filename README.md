@@ -4,11 +4,11 @@ Note!
 
 All of the FILES are in the Master branch.
 
-Main Website page is MainPage.html
+Main Website page is index.html
 
 Link to Website !
 
-https://chris416hub.herokuapp.com/MainPage.html
+https://416-hub.netlify.app/
 
 Welcome!
 
